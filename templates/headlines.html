@@ -1,0 +1,11 @@
+<h1> Hello, {{name}}! </h1>
+<h3> Today's techonology headlines are ...</h3>
+
+
+<ol> 
+{% for head in headlines_result %}
+
+<li><h4> {{head.topic|e}} </h4></li>
+
+{%endfor%}
+</ol>
